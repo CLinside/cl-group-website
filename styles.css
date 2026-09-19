@@ -21,10 +21,11 @@ body {
   margin: auto;
   padding: 0 5vw;
 }
-.nav, footer {
-  display: flex;
+.nav {
+ display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
+ 
   min-height: 82px;
   border-bottom: 1px solid var(--line);
 }
@@ -35,7 +36,43 @@ body {
   font-weight: 700;
   letter-spacing: .22em;
 }
-.launch, .label {
+
+.wordmark span {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.nav-cta {
+  justify-self: end;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  padding: 12px 18px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+}
+
+.nav-cta span {
+  color: var(--gold);
+  margin-left: 8px;
+}
+.label {
   color: var(--gold);
   font-size: 10px;
   font-weight: 600;
