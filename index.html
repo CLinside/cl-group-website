@@ -115,17 +115,25 @@ signupForm.addEventListener("submit", async function(event) {
             body: JSON.stringify({ email: email })
         });
 
-        if (!response.ok) {
-            throw new Error("Signup failed");
-        }
+       if (!response.ok) {
+    const errorData = await response.json();
 
-        signupMessage.textContent = "Thanks — you're on the list.";
+    if (errorData.code === "23505") {
+        signupMessage.textContent = "You're already on the list!";
         signupForm.reset();
-
-    } catch (error) {
-        signupMessage.textContent =
-            "Something went wrong. Please try again.";
+        return;
     }
+
+    throw new Error("Signup failed");
+}
+
+signupMessage.textContent = "Thanks — you're on the list.";
+signupForm.reset();
+
+} catch (error) {
+    signupMessage.textContent =
+        "Something went wrong. Please try again.";
+}
 });
 </script>
 </body>
