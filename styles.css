@@ -88,16 +88,48 @@ body {
   padding: 80px 0 100px;
 }
 .hero-logo-wrap {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 42px;
-  overflow: hidden;
-  border-radius: 3px;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
 }
+.hero-visual {
+  position: relative;
+  width: 360px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.hero-ring {
+  position: absolute;
+  border: 1px solid rgba(182, 155, 112, 0.38);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-ring-one {
+  width: 300px;
+  height: 210px;
+  transform: rotate(-8deg);
+}
+
+.hero-ring-two {
+  width: 245px;
+  height: 245px;
+  border-color: rgba(182, 155, 112, 0.18);
+  transform: rotate(18deg);
+}
+
 .hero-logo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 .hero .label { margin-bottom: 20px; }
