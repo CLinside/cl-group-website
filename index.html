@@ -105,7 +105,7 @@ signupForm.addEventListener("submit", async function(event) {
     signupMessage.textContent = "Signing you up...";
 
     try {
-        const response = await fetch(SUPABASE_URL + "email_signups", {
+        const response = await fetch(SUPABASE_URL + "email%20signups", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
