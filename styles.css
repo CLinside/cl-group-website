@@ -240,6 +240,13 @@ footer {
   line-height: 1.7;
 }
 
+.privacy-note {
+  margin-top: 14px;
+  font-size: 0.75rem;
+  color: #777;
+  line-height: 1.5;
+}
+
 /* MOBILE IMPROVEMENTS */
 @media (max-width: 600px) {
 
