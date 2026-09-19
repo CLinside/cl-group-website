@@ -114,9 +114,10 @@ body {
 }
 
 .hero-ring-one {
-  width: 300px;
-  height: 210px;
-  transform: rotate(-8deg);
+  width: 270px;
+  height: 270px;
+  border-color: rgba(182, 155, 112, 0.42);
+  transform: rotate(-6deg);
 }
 
 .hero-ring-two {
