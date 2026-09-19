@@ -221,3 +221,50 @@ footer {
   background: #fff;
   color: #111;
 }
+
+
+/* MOBILE IMPROVEMENTS */
+@media (max-width: 600px) {
+
+  header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 13vw, 4rem);
+    line-height: 0.95;
+  }
+
+  .about {
+    padding: 70px 24px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+
+  .updates {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .form-row {
+    width: 100%;
+  }
+
+  footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
