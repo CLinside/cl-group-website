@@ -67,13 +67,19 @@
           <h2>Be there from the start.</h2>
           <p>Leave your email and we'll have a place ready for launch updates.</p>
         </div>
-        <form onsubmit="event.preventDefault(); this.reset(); document.getElementById('message').textContent='Thanks — you’re on the list.';">
-          <div class="form-row">
-            <input type="email" placeholder="Email address" aria-label="Email address" required>
-            <button type="submit">NOTIFY ME <span>→</span></button>
-          </div>
-          <small id="message"></small>
-        </form>
+      <form id="signup-form">
+    <div class="form-row">
+        <input
+            type="email"
+            id="signup-email"
+            placeholder="Email address"
+            aria-label="Email address"
+            required
+        >
+        <button type="submit">NOTIFY ME <span>→</span></button>
+    </div>
+    <small id="message"></small>
+</form>
       </section>
     </main>
 
@@ -82,5 +88,45 @@
       <span>EUROPE</span>
     </footer>
   </div>
+
+
+  <script>
+const SUPABASE_URL = "https://vnkbiuuxufuajkuqwrjv.supabase.co/rest/v1/";
+const SUPABASE_KEY = "sb_publishable_lIZQ8uZMdxzTw-mdBx1P1w_kdxMO5hs";
+
+const signupForm = document.getElementById("signup-form");
+const signupEmail = document.getElementById("signup-email");
+const signupMessage = document.getElementById("message");
+
+signupForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const email = signupEmail.value.trim();
+    signupMessage.textContent = "Signing you up...";
+
+    try {
+        const response = await fetch(SUPABASE_URL + "email_signups", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "apikey": SUPABASE_KEY,
+                "Authorization": "Bearer " + SUPABASE_KEY
+            },
+            body: JSON.stringify({ email: email })
+        });
+
+        if (!response.ok) {
+            throw new Error("Signup failed");
+        }
+
+        signupMessage.textContent = "Thanks — you're on the list.";
+        signupForm.reset();
+
+    } catch (error) {
+        signupMessage.textContent =
+            "Something went wrong. Please try again.";
+    }
+});
+</script>
 </body>
 </html>
