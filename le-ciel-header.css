@@ -442,3 +442,22 @@
   }
 }
 
+/* Make hero video fill the full width */
+.lc-video-hero {
+  width: 100vw !important;
+  max-width: none !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  overflow: hidden !important;
+  background: #000000 !important;
+}
+
+.lc-video-hero__video {
+  width: 100% !important;
+  height: 100vh !important;
+  min-height: 620px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+}
+
