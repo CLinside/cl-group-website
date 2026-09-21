@@ -879,3 +879,21 @@ body {
 .footer-bottom span:last-child {
   margin: 0 !important;
 }
+
+/* Spread footer bottom row back out */
+.footer-bottom {
+  width: min(1180px, calc(100% - 48px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.footer-bottom span:first-child {
+  margin-right: auto !important;
+}
+
+.footer-bottom span:last-child {
+  margin-left: auto !important;
+  text-align: right !important;
+}
