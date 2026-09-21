@@ -502,3 +502,42 @@
   font-size: 11px !important;
 }
 
+/* Statement text on commercial video */
+.video-statement {
+  position: absolute !important;
+  left: clamp(32px, 7vw, 120px) !important;
+  bottom: clamp(60px, 12vh, 150px) !important;
+  z-index: 6 !important;
+  max-width: 760px !important;
+  color: #ffffff !important;
+}
+
+.video-statement .label {
+  color: #d0a15f !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.26em !important;
+  margin: 0 0 18px !important;
+}
+
+.video-statement h2 {
+  color: #ffffff !important;
+  font-size: clamp(42px, 5.4vw, 82px) !important;
+  font-weight: 900 !important;
+  line-height: 0.96 !important;
+  letter-spacing: -0.04em !important;
+  margin: 0 !important;
+}
+
+.video-statement h2 span {
+  color: #c08d7d !important;
+}
+
+.video-statement p:not(.label) {
+  color: rgba(255, 255, 255, 0.86) !important;
+  max-width: 620px !important;
+  margin: 18px 0 0 !important;
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+}
+
