@@ -471,3 +471,35 @@ footer {
   color: #111111 !important;
   border-color: #b8955f !important;
 }
+
+/* Fix content being pushed off the left side */
+.page {
+  width: min(1240px, 100%) !important;
+  max-width: 1240px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+}
+
+.statement,
+.about,
+.collection,
+.updates {
+  width: 100% !important;
+  max-width: 760px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.statement h2,
+.about h2,
+.collection h2,
+.updates h2,
+.statement p,
+.about p,
+.collection p,
+.updates p,
+.label {
+  max-width: 100% !important;
+}
