@@ -780,3 +780,25 @@ body {
   justify-content: space-between !important;
   gap: 0 !important;
 }
+
+/* Final footer column positions */
+.footer-main {
+  width: min(1060px, 100%) !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  column-gap: 120px !important;
+}
+
+.footer-main .footer-column:last-child {
+  justify-self: end !important;
+  min-width: 220px !important;
+}
+
+.footer-bottom {
+  width: min(1060px, 100%) !important;
+  justify-content: space-between !important;
+}
+
+.footer-bottom span:last-child {
+  margin-left: auto !important;
+  text-align: right !important;
+}
