@@ -378,3 +378,43 @@ main,
 section {
   background: #6b6b6b !important;
 }
+
+/* White page background and right-side hero actions */
+body,
+.page,
+main,
+.hero,
+.statement,
+.about,
+.updates,
+section {
+  background: #ffffff !important;
+}
+
+.hero {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  min-height: 520px !important;
+}
+
+.hero-actions {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  gap: 16px !important;
+}
+
+.shop-now-link {
+  color: #111111 !important;
+  font-size: clamp(42px, 7vw, 92px) !important;
+  font-weight: 800 !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.03em !important;
+  text-decoration: none !important;
+}
+
+.hero-actions .cta {
+  color: #111111 !important;
+  border-color: #111111 !important;
+}
