@@ -461,3 +461,44 @@
   display: block !important;
 }
 
+/* Video action buttons */
+.lc-video-hero {
+  position: relative !important;
+}
+
+.video-actions {
+  position: absolute !important;
+  right: clamp(24px, 6vw, 90px) !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 5 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  gap: 12px !important;
+}
+
+.video-shop-now,
+.video-stay-updated {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 150px !important;
+  padding: 14px 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  color: #ffffff !important;
+  background: rgba(0, 0, 0, 0.18) !important;
+  text-decoration: none !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.14em !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.video-shop-now {
+  font-size: 13px !important;
+}
+
+.video-stay-updated {
+  font-size: 11px !important;
+}
+
