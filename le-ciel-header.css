@@ -404,25 +404,33 @@
   text-shadow: none !important;
 }
 
-/* Smooth animation for header appearing/disappearing */
+/* Smoother header transition */
 .lc-header {
   transition:
-    background-color 300ms ease,
-    color 300ms ease,
-    box-shadow 300ms ease,
-    transform 300ms ease,
-    opacity 300ms ease !important;
+    background-color 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1) !important;
 }
 
 .lc-header::before {
   transition:
-    opacity 300ms ease,
-    transform 300ms ease !important;
+    opacity 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1) !important;
 }
 
-.lc-header.lc-header--solid {
-  animation: lcHeaderSlideIn 300ms ease forwards;
+.lc-header a,
+.lc-header span,
+.lc-title,
+.lc-wordmark,
+.lc-nav,
+.lc-icon-link {
+  transition:
+    color 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    text-shadow 650ms cubic-bezier(0.22, 1, 0.36, 1) !important;
 }
+
+
 
 @keyframes lcHeaderSlideIn {
   from {
@@ -433,3 +441,4 @@
     transform: translateY(0);
   }
 }
+
