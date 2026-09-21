@@ -1,0 +1,333 @@
+/* Load after your existing styles.css. These styles are scoped to this component. */
+.lc-header,
+.lc-header *,
+.lc-video-hero,
+.lc-video-hero * {
+  box-sizing: border-box;
+}
+
+.lc-header {
+  --lc-header-ink: #fff;
+  --lc-badge-ink: #111;
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+  min-height: 80px;
+  margin: 0;
+  padding: 12px clamp(20px, 3vw, 48px);
+  border: 0;
+  background: transparent;
+  color: var(--lc-header-ink);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-shadow: 0 1px 5px rgb(0 0 0 / 35%);
+  transition: color 280ms ease, box-shadow 280ms ease, text-shadow 280ms ease;
+}
+
+/* Only this layer animates: the transparent state has no blur or tint. */
+.lc-header::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #fff;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 280ms ease, transform 280ms ease;
+  content: "";
+  pointer-events: none;
+}
+
+.lc-header.lc-header--solid,
+.lc-header.lc-header--menu-open {
+  --lc-header-ink: #111;
+  --lc-badge-ink: #fff;
+  box-shadow: 0 3px 18px rgb(0 0 0 / 8%);
+  text-shadow: none;
+}
+
+.lc-header.lc-header--solid::before,
+.lc-header.lc-header--menu-open::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lc-header a,
+.lc-header button {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  text-shadow: inherit;
+}
+
+.lc-header a:focus-visible,
+.lc-header button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+
+.lc-header__brand {
+  justify-self: start;
+  display: grid;
+  justify-items: start;
+  gap: 1px;
+}
+
+.lc-header__wordmark {
+  display: block;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+}
+
+.lc-header__menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 28px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.lc-header__title {
+  justify-self: center;
+  font-family: "Times New Roman", Georgia, serif !important;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.lc-header__right {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 0;
+}
+
+.lc-header__links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+}
+
+.lc-header__links a {
+  padding-block: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.lc-header__icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 16px;
+  border-left: 1px solid currentColor;
+}
+
+.lc-header__icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 7px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+/* The coming-soon page does not yet have a wishlist or checkout. */
+.lc-header__icon:disabled {
+  color: inherit;
+  opacity: 1;
+  cursor: default;
+}
+
+.lc-header svg {
+  display: block;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.lc-header__menu-toggle svg {
+  width: 15px;
+  height: 15px;
+}
+
+.lc-header__count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--lc-header-ink);
+  color: var(--lc-badge-ink);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: none;
+  transition: background-color 280ms ease, color 280ms ease;
+}
+
+.lc-header__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: clamp(20px, 3vw, 48px);
+  width: min(280px, calc(100vw - 40px));
+  padding: 14px;
+  background: #fff;
+  color: #111;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 12%);
+  text-shadow: none;
+}
+
+.lc-header__menu[hidden] { display: none; }
+
+.lc-header__menu a {
+  display: block;
+  padding: 14px 12px;
+  color: #111;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+
+.lc-header__menu a:hover,
+.lc-header__menu a:focus-visible { background: #f4f2ee; }
+
+.lc-video-hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 910 / 512;
+  min-height: 340px;
+  max-height: 100svh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #646464;
+}
+
+.lc-video-hero__video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.lc-video-hero__toggle {
+  position: absolute;
+  right: clamp(20px, 3vw, 48px);
+  bottom: 24px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid rgb(255 255 255 / 70%);
+  border-radius: 0;
+  background: rgb(0 0 0 / 35%);
+  color: #fff;
+  font: 500 12px/1.5 "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.lc-video-hero__toggle:disabled { cursor: default; }
+
+.lc-video-hero__toggle svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  stroke: none;
+}
+
+.lc-video-hero__toggle [hidden] { display: none; }
+
+.lc-video-hero__status {
+  position: absolute;
+  bottom: 24px;
+  left: clamp(20px, 3vw, 48px);
+  z-index: 1;
+  max-width: calc(100% - 200px);
+  margin: 0;
+  padding: 8px 10px;
+  background: rgb(0 0 0 / 65%);
+  color: #fff;
+  font: 400 12px/1.5 "Helvetica Neue", Arial, sans-serif;
+}
+
+.lc-video-hero__status:empty { display: none; }
+
+:where(#collection, #about, #updates) { scroll-margin-top: 104px; }
+
+@media (max-width: 1000px) {
+  .lc-header__links { display: none; }
+  .lc-header__icons { padding-left: 0; border-left: 0; }
+}
+
+@media (max-width: 600px) {
+  .lc-header {
+    gap: 8px;
+    min-height: 80px;
+    padding: 10px 12px;
+  }
+  .lc-header__wordmark { font-size: 10px; letter-spacing: 0.06em; }
+  .lc-header__title { font-size: 28px; letter-spacing: 0.5px; }
+  .lc-header__icons { gap: 0; }
+  .lc-header__icon { width: 40px; height: 44px; }
+  .lc-header__count { top: 3px; right: 1px; }
+  .lc-header__menu { left: 12px; }
+  .lc-video-hero__toggle { right: 16px; bottom: 16px; }
+  .lc-video-hero__status { left: 16px; bottom: 16px; }
+}
+
+@media (pointer: coarse) {
+  .lc-header__menu-toggle { min-height: 44px; }
+  .lc-header__icon { min-height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lc-header,
+  .lc-header::before,
+  .lc-header__count { transition: none; }
+}
