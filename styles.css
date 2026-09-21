@@ -503,3 +503,25 @@ footer {
 .label {
   max-width: 100% !important;
 }
+
+/* Match reference font style */
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.statement h2,
+.about h2,
+.collection h2,
+.updates h2 {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 0.95 !important;
+}
+
+.statement p,
+.about p,
+.collection p,
+.updates p {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
