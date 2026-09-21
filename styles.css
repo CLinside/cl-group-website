@@ -802,3 +802,38 @@ body {
   margin-left: auto !important;
   text-align: right !important;
 }
+
+/* Footer final reset */
+.site-footer {
+  padding: 56px 0 0 !important;
+}
+
+.footer-main {
+  width: min(1160px, calc(100% - 96px)) !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  gap: 0 !important;
+  align-items: start !important;
+}
+
+.footer-brand {
+  justify-self: start !important;
+}
+
+.footer-main .footer-column:nth-of-type(1) {
+  justify-self: center !important;
+}
+
+.footer-main .footer-column:nth-of-type(2) {
+  justify-self: end !important;
+}
+
+.footer-bottom {
+  width: min(1160px, calc(100% - 96px)) !important;
+  margin: 52px auto 0 !important;
+  padding: 18px 0 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  border-top: 1px solid rgba(17, 17, 17, 0.18) !important;
+}
