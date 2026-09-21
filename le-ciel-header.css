@@ -403,3 +403,33 @@
   color: #111111 !important;
   text-shadow: none !important;
 }
+
+/* Smooth animation for header appearing/disappearing */
+.lc-header {
+  transition:
+    background-color 300ms ease,
+    color 300ms ease,
+    box-shadow 300ms ease,
+    transform 300ms ease,
+    opacity 300ms ease !important;
+}
+
+.lc-header::before {
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease !important;
+}
+
+.lc-header.lc-header--solid {
+  animation: lcHeaderSlideIn 300ms ease forwards;
+}
+
+@keyframes lcHeaderSlideIn {
+  from {
+    transform: translateY(-8px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
