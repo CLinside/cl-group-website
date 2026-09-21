@@ -410,3 +410,12 @@ section {
   color: #111111 !important;
   border-color: #111111 !important;
 }
+
+/* Statement headline color fix */
+.statement h2 {
+  color: #111111 !important;
+}
+
+.statement h2 span {
+  color: #b88a78 !important;
+}
