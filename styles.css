@@ -437,3 +437,37 @@ section {
   color: #b8955f !important;
   border-color: #b8955f !important;
 }
+
+/* Final visible colors for collection and signup sections */
+.collection .label,
+.updates .label {
+  color: #b8955f !important;
+}
+
+.collection h2,
+.updates h2 {
+  color: #111111 !important;
+}
+
+.collection p,
+.updates p,
+.updates .privacy,
+footer {
+  color: #b8955f !important;
+}
+
+.form-row input {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: #b8955f !important;
+}
+
+.form-row input::placeholder {
+  color: #111111 !important;
+}
+
+.form-row button {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: #b8955f !important;
+}
