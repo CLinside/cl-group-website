@@ -331,3 +331,57 @@
   .lc-header::before,
   .lc-header__count { transition: none; }
 }
+
+/* Final header layout fix */
+.lc-header {
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-height: 64px !important;
+  padding: 10px 32px !important;
+  gap: 24px !important;
+}
+
+.lc-wordmark {
+  justify-self: start !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  color: currentColor !important;
+  text-decoration: none !important;
+}
+
+.lc-title {
+  justify-self: center !important;
+  color: currentColor !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 34px !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+.lc-nav {
+  justify-self: end !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 22px !important;
+}
+
+.lc-nav a,
+.lc-icon-link {
+  color: currentColor !important;
+  text-decoration: none !important;
+}
+
+.lc-header:not(.is-solid) {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+.lc-header.is-solid {
+  background: #ffffff !important;
+  color: #111111 !important;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08) !important;
+}
