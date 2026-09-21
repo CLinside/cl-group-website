@@ -707,3 +707,16 @@ body {
     gap: 8px !important;
   }
 }
+
+/* Slightly widen product section */
+.collection {
+  max-width: 1320px !important;
+}
+
+.product-grid {
+  gap: 14px !important;
+}
+
+.product-image-wrap {
+  aspect-ratio: 1 / 1.22 !important;
+}
