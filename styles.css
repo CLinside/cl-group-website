@@ -720,3 +720,8 @@ body {
 .product-image-wrap {
   aspect-ratio: 1 / 1.22 !important;
 }
+
+/* Add a little more space between product cards */
+.product-grid {
+  gap: 28px !important;
+}
