@@ -622,3 +622,88 @@ body {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* Footer layout fix */
+.site-footer {
+  width: 100% !important;
+  border-top: 1px solid rgba(17, 17, 17, 0.18) !important;
+  background: #ffffff !important;
+  color: #111111 !important;
+  padding: 56px 5vw 0 !important;
+  margin-top: 80px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.footer-main {
+  width: min(1180px, 100%) !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 1.3fr 1fr 1fr 1.4fr !important;
+  gap: 64px !important;
+  align-items: start !important;
+}
+
+.footer-logo {
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  margin-bottom: 34px !important;
+  color: #111111 !important;
+}
+
+.footer-brand p,
+.footer-column p,
+.footer-column a,
+.footer-brand a {
+  color: #555555 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  text-decoration: none !important;
+}
+
+.footer-column {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.footer-column h3 {
+  color: #111111 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  margin: 0 0 12px !important;
+}
+
+.footer-signup {
+  margin-top: 12px !important;
+  min-height: 42px !important;
+  border: 1px solid rgba(17, 17, 17, 0.35) !important;
+  padding: 0 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  color: #111111 !important;
+}
+
+.footer-bottom {
+  width: min(1180px, 100%) !important;
+  margin: 52px auto 0 !important;
+  padding: 18px 0 !important;
+  border-top: 1px solid rgba(17, 17, 17, 0.18) !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  color: #555555 !important;
+  font-size: 13px !important;
+}
+
+@media (max-width: 800px) {
+  .footer-main {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+}
