@@ -738,3 +738,24 @@ body {
   justify-content: center !important;
   gap: clamp(80px, 18vw, 240px) !important;
 }
+
+/* Footer spacing correction */
+.footer-main {
+  width: min(980px, 100%) !important;
+  grid-template-columns: 1.4fr 1fr 1fr !important;
+  justify-content: center !important;
+  gap: 72px !important;
+  min-height: auto !important;
+}
+
+.site-footer {
+  padding-top: 44px !important;
+  margin-top: 56px !important;
+}
+
+.footer-bottom {
+  width: min(980px, 100%) !important;
+  margin-top: 42px !important;
+  justify-content: space-between !important;
+  gap: 0 !important;
+}
