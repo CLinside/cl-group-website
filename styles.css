@@ -725,3 +725,16 @@ body {
 .product-grid {
   gap: 28px !important;
 }
+
+/* Center footer after removing community column */
+.footer-main {
+  grid-template-columns: repeat(3, auto) !important;
+  justify-content: center !important;
+  gap: clamp(80px, 12vw, 180px) !important;
+  text-align: left !important;
+}
+
+.footer-bottom {
+  justify-content: center !important;
+  gap: clamp(80px, 18vw, 240px) !important;
+}
