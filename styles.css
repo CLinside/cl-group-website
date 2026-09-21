@@ -369,3 +369,12 @@ footer {
     padding-right: 24px;
   }
 }
+
+/* Grey page background */
+body,
+.page,
+main,
+.hero,
+section {
+  background: #6b6b6b !important;
+}
