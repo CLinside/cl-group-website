@@ -419,3 +419,21 @@ section {
 .statement h2 span {
   color: #b88a78 !important;
 }
+
+/* About section color fix */
+.about .label {
+  color: #b8955f !important;
+}
+
+.about h2 {
+  color: #111111 !important;
+}
+
+.about p {
+  color: #b8955f !important;
+}
+
+.about .outline {
+  color: #b8955f !important;
+  border-color: #b8955f !important;
+}
