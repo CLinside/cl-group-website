@@ -759,3 +759,24 @@ body {
   justify-content: space-between !important;
   gap: 0 !important;
 }
+
+/* Footer layout like reference image, without community column */
+.footer-main {
+  width: min(1060px, 100%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: grid !important;
+  grid-template-columns: 1.35fr 1fr 1fr !important;
+  gap: clamp(90px, 12vw, 170px) !important;
+  justify-content: center !important;
+  align-items: start !important;
+}
+
+.footer-bottom {
+  width: min(1060px, 100%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 0 !important;
+}
