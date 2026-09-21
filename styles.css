@@ -370,14 +370,6 @@ footer {
   }
 }
 
-/* Grey page background */
-body,
-.page,
-main,
-.hero,
-section {
-  background: #6b6b6b !important;
-}
 
 /* White page background and right-side hero actions */
 body,
