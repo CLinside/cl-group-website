@@ -18,33 +18,43 @@
 <script src="le-ciel-header.js" defer></script>
 </head>
 <body>
-  <div class="page">
+<header class="lc-header" data-lc-header>
+  <a class="lc-header__brand" href="#" aria-label="CL Group Wears home">
+    <span>CL GROUP WEARS</span>
+    <span class="lc-header__menu-label">☰ MENU</span>
+  </a>
 
-    <header class="nav">
-  <a class="wordmark" href="#">CL GROUP <span>WEARS</span></a>
+  <a class="lc-header__title" href="#" aria-label="Le Ciel home">Le Ciel</a>
 
-  <nav class="nav-links">
-    <a href="#updates">UPDATES</a>
+  <nav class="lc-header__nav" aria-label="Main navigation">
     <a href="#about">ABOUT</a>
     <a href="mailto:CLgroupclothing@outlook.com">CONTACT</a>
+    <a href="#updates">UPDATES</a>
+    <span class="lc-header__divider"></span>
+    <a class="lc-header__icon-link" href="#updates" aria-label="Wishlist">
+      ♡
+    </a>
+    <a class="lc-header__icon-link" href="#updates" aria-label="Shopping bag">
+      🛍 <span>0</span>
+    </a>
   </nav>
-
-  <a class="nav-cta" href="#updates">
-    STAY UPDATED <span>→</span>
-  </a>
 </header>
 
-    <main>
-     <section class="hero">
-  <div class="hero-visual">
-    <div class="hero-ring hero-ring-one"></div>
-    <div class="hero-ring hero-ring-two"></div>
+<section class="lc-video-hero" data-lc-video-hero>
+  <video
+    class="lc-video-hero__video"
+    src="le-ciel-commercial.mp4"
+    poster="le-ciel-poster.jpg"
+    muted
+    loop
+    playsinline
+    preload="metadata"
+  ></video>
+</section>
 
-    <div class="hero-logo-wrap">
-      <img class="hero-logo" src="cl-group-logo.png" alt="CL Group logo">
-    </div>
-  </div>
-
+<div class="page">
+  <main>
+    <section class="hero">
   <p class="label">A NEW CLOTHING BRAND</p>
 
   <h1>
