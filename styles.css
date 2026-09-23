@@ -753,31 +753,45 @@ body {
   border-top: 1px solid rgba(17, 17, 17, 0.16);
 }
 
+/* Trust section */
+.trust-section {
+  width: min(1060px, calc(100% - 48px));
+  margin: 96px auto 0;
+  padding: 42px 0 10px;
+  border-top: 1px solid rgba(17, 17, 17, 0.18);
+}
+
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 42px;
+  gap: 54px;
+}
+
+.trust-grid > div {
+  padding-right: 18px;
 }
 
 .trust-grid h3 {
-  margin: 0 0 14px;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+  color: #b98663;
 }
 
 .trust-grid p {
   margin: 0;
+  max-width: 210px;
   font-size: 13px;
-  line-height: 1.7;
-  color: #5f4636;
+  line-height: 1.8;
+  color: #2b1d17;
 }
 
 @media (max-width: 800px) {
   .trust-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 28px;
+    gap: 34px 28px;
   }
 }
 
