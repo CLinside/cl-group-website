@@ -811,3 +811,35 @@ body {
 .trust-section {
   padding-bottom: 90px !important;
 }
+
+/* Product purchase preview */
+.product-price {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #000000;
+}
+
+.product-stock,
+.product-sizes {
+  margin: 6px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #555555;
+}
+
+.product-coming-soon {
+  display: inline-flex;
+  margin-top: 14px;
+  padding: 11px 18px;
+  border: 1px solid #111111;
+  color: #111111;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.product-coming-soon:hover {
+  background: #111111;
+  color: #ffffff;
+}
