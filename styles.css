@@ -800,3 +800,9 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Move launch updates lower */
+#updates {
+  margin-top: 100px !important;
+  padding-top: 56px !important;
+}
