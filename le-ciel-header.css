@@ -556,27 +556,3 @@
 .video-statement .luxury-text {
   color: #c8a46a !important;
 }
-
-/* Cleaner luxury navigation */
-.lc-header {
-  backdrop-filter: blur(14px);
-  background: rgba(10, 10, 10, 0.18) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.lc-header a,
-.lc-header button {
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-  font-size: 12px !important;
-}
-
-.lc-header__brand,
-.lc-header__logo {
-  letter-spacing: 0.02em !important;
-}
-
-.lc-header a:hover,
-.lc-header button:hover {
-  color: #c8a46a !important;
-}
