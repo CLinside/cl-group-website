@@ -744,3 +744,45 @@ body {
   justify-content: space-between !important;
   border-top: 1px solid rgba(17, 17, 17, 0.18) !important;
 }
+
+/* Trust section */
+.trust-section {
+  width: min(1060px, calc(100% - 48px));
+  margin: 80px auto 0;
+  padding-top: 36px;
+  border-top: 1px solid rgba(17, 17, 17, 0.16);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 42px;
+}
+
+.trust-grid h3 {
+  margin: 0 0 14px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.trust-grid p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #5f4636;
+}
+
+@media (max-width: 800px) {
+  .trust-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
