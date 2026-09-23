@@ -914,3 +914,18 @@ body {
   min-width: 130px !important;
   justify-content: center !important;
 }
+
+/* Keep page sections below hero */
+.collection,
+.launch-status,
+.trust-section,
+.updates,
+.site-footer {
+  position: relative !important;
+  z-index: 1 !important;
+  clear: both !important;
+}
+
+body {
+  overflow-x: hidden !important;
+}
