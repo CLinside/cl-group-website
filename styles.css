@@ -777,7 +777,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #b98663;
+ color: #000000;
 }
 
 .trust-grid p {
@@ -785,7 +785,7 @@ body {
   max-width: 210px;
   font-size: 13px;
   line-height: 1.8;
-  color: #2b1d17;
+  color: #000000;
 }
 
 @media (max-width: 800px) {
