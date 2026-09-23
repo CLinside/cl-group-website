@@ -575,3 +575,14 @@
 .lc-header button:hover {
   color: inherit !important;
 }
+
+/* Force header fully clear */
+header,
+.site-header,
+.lc-header,
+.le-ciel-header {
+  background: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
