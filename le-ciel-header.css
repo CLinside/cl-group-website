@@ -571,3 +571,26 @@
   line-height: 1 !important;
 }
 
+/* Emergency hero layout reset */
+.lc-video-hero {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  overflow: hidden !important;
+}
+
+.lc-video-hero__video {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.video-statement,
+.video-actions {
+  position: absolute !important;
+  z-index: 5 !important;
+}
+
