@@ -556,3 +556,22 @@
 .video-statement .luxury-text {
   color: #c8a46a !important;
 }
+
+/* Restore original header navigation */
+.lc-header {
+  backdrop-filter: none !important;
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.lc-header a,
+.lc-header button {
+  letter-spacing: inherit !important;
+  text-transform: none !important;
+  font-size: inherit !important;
+}
+
+.lc-header a:hover,
+.lc-header button:hover {
+  color: inherit !important;
+}
