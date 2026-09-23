@@ -806,3 +806,8 @@ body {
   margin-top: 100px !important;
   padding-top: 56px !important;
 }
+
+/* Fix spacing under trust section */
+.trust-section {
+  padding-bottom: 90px !important;
+}
