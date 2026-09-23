@@ -558,9 +558,10 @@
 }
 
 /* Restore center Le Ciel logo size */
-.lc-header__logo,
-.lc-header__center,
-.lc-logo {
-  font-size: 28px !important;
+.lc-header .lc-header__logo,
+.lc-header .lc-header__center,
+.lc-header .lc-logo {
+  font-size: 42px !important;
+  line-height: 1 !important;
 }
 
