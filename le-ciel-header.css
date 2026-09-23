@@ -557,3 +557,10 @@
   color: #c8a46a !important;
 }
 
+/* Restore center Le Ciel logo size */
+.lc-header__logo,
+.lc-header__center,
+.lc-logo {
+  font-size: 28px !important;
+}
+
