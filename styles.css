@@ -872,3 +872,16 @@ body {
   line-height: 1.7;
   color: #555555;
 }
+
+/* Launch status color fix */
+.launch-status h2 {
+  color: #111111 !important;
+}
+
+.launch-status .label {
+  color: #b98663 !important;
+}
+
+.launch-status p:not(.label) {
+  color: #2b1d17 !important;
+}
