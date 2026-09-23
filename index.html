@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CL Group — A new clothing brand coming soon to Europe.">
-  <title>CL Group | Coming Soon</title>
-  <link rel="icon" type="image/png" href="cl-group-logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CL Group — A new clothing brand coming soon to Europe.">
+<title>CL Group | Coming Soon</title>
+<link rel="icon" type="image/png" href="cl-group-logo.png">
 
-  <meta property="og:title" content="CL Group | Coming Soon">
+<!-- Open Graph -->
+<meta property="og:title" content="CL Group | Coming Soon">
 <meta property="og:description" content="A new clothing brand. The first CL Group collection is coming soon.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://clinside.github.io/cl-group-website/cl-group-logo.png">
-  <meta property="og:url" content="https://clinside.github.io/cl-group-website/">
-  <link rel="stylesheet" href="styles.css">
+<meta property="og:url" content="https://clinside.github.io/cl-group-website/">
 
-  <link rel="stylesheet" href="le-ciel-header.css">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CL Group | Coming Soon">
+<meta name="twitter:description" content="A new clothing brand. The first CL Group collection is coming soon.">
+<meta name="twitter:image" content="https://clinside.github.io/cl-group-website/cl-group-logo.png">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="le-ciel-header.css">
 <script src="le-ciel-header.js" defer></script>
 </head>
 <body>
+
 <header class="lc-header" data-lc-header>
   <a class="lc-wordmark" href="#" aria-label="CL Group Wears home">
     <span>CL GROUP WEARS</span>
     <span class="lc-menu-label">☰ MENU</span>
   </a>
-
   <a class="lc-title" href="#" aria-label="Le Ciel home">Le Ciel</a>
-
   <nav class="lc-nav" aria-label="Main navigation">
     <a href="#about">ABOUT</a>
     <a href="mailto:CLgroupclothing@outlook.com">CONTACT</a>
     <a href="#updates">UPDATES</a>
-    <span class="lc-divider"></span>
-    <a class="lc-icon-link" href="#updates" aria-label="Wishlist">♡</a>
-    <a class="lc-icon-link" href="#updates" aria-label="Shopping bag">🛍 <span>0</span></a>
   </nav>
 </header>
 
@@ -40,32 +43,26 @@
   <video
     class="lc-video-hero__video"
     src="le-ciel-commercial.mp4"
+    poster="le-ciel-poster.jpg"
     muted
     loop
     autoplay
     playsinline
     preload="auto"
   ></video>
-
-    <div class="video-statement">
+  <div class="video-statement">
     <p class="label">CL GROUP</p>
     <h2>Made with intention. <span>Designed with purpose, Le Ciel.</span></h2>
     <p>A considered approach to modern clothing, defined by clean design, versatility and lasting identity.</p>
   </div>
-
   <div class="video-actions">
     <a class="video-shop-now" href="#collection">SHOP NOW</a>
     <a class="video-stay-updated" href="#updates">STAY UPDATED <span>↗</span></a>
   </div>
-
- 
 </section>
-
-
 
 <section class="collection" id="collection">
   <p class="label">FIRST COLLECTION</p>
-
   <div class="product-grid">
     <article class="product-card">
       <div class="product-image-wrap">
@@ -73,10 +70,6 @@
           src="white.jpg"
           alt="Le Ciel Vintage USA white long sleeve"
         >
-        <div class="product-actions">
-          <a href="#likes" aria-label="Add Le Ciel Vintage USA to likes">♡</a>
-          <a href="#cart" aria-label="Add Le Ciel Vintage USA to cart">🛒</a>
-        </div>
       </div>
       <h2>Le Ciel Vintage USA</h2>
     </article>
@@ -84,62 +77,55 @@
     <article class="product-card">
       <div class="product-image-wrap">
         <img
-          src="white back.jpg"
+          src="white-back.jpg"
           alt="Le Ciel Clean USA black long sleeve"
         >
-        <div class="product-actions">
-          <a href="#likes" aria-label="Add Le Ciel Clean USA to likes">♡</a>
-          <a href="#cart" aria-label="Add Le Ciel Clean USA to cart">🛒</a>
-        </div>
       </div>
       <h2>Le Ciel Clean USA</h2>
     </article>
   </div>
 </section>
-      <section class="updates" id="updates">
-        <div>
-          <p class="label">LAUNCH UPDATES</p>
-          <h2>Be there from the beginning.</h2>
-          <p>Receive first access to collection reveals, launch updates and future releases.</p>
-        </div>
-      <form id="signup-form">
+
+<section class="updates" id="updates">
+  <div>
+    <p class="label">LAUNCH UPDATES</p>
+    <h2>Be there from the beginning.</h2>
+    <p>Receive first access to collection reveals, launch updates and future releases.</p>
+  </div>
+  <form id="signup-form">
     <div class="form-row">
-        <input
-            type="email"
-            id="signup-email"
-            placeholder="Email address"
-            aria-label="Email address"
-            required
-        >
-        <button type="submit">NOTIFY ME <span>→</span></button>
+      <input
+        type="email"
+        id="signup-email"
+        placeholder="Email address"
+        aria-label="Email address"
+        required
+      >
+      <button type="submit">NOTIFY ME <span>→</span></button>
     </div>
     <small id="message"></small>
-</form>
-        <p class="privacy-note">
-  Your email will only be used for CL Group launch updates.
-</p>
-      </section>
-    </main>
+  </form>
+  <p class="privacy-note">
+    Your email will only be used for CL Group launch updates.
+  </p>
+</section>
 
- <footer class="site-footer">
+<footer class="site-footer">
   <div class="footer-main">
     <div class="footer-brand">
       <div class="footer-logo">Le Ciel</div>
       <p>Support: <a href="mailto:CLgroupclothing@outlook.com">CLgroupclothing@outlook.com</a></p>
     </div>
-
     <div class="footer-column">
       <h3>Customer Service</h3>
       <a href="mailto:CLgroupclothing@outlook.com">Contact us</a>
     </div>
-
     <div class="footer-column">
       <h3>Brand</h3>
       <a href="#collection">Collection</a>
       <a href="#updates">Launch Updates</a>
       <a href="https://www.instagram.com/clgroupclothing/" target="_blank" rel="noopener noreferrer">Instagram</a>
     </div>
-
     <div class="footer-column footer-community">
       <h3>Join the community</h3>
       <p>Be the one to be notified during drops.</p>
@@ -151,10 +137,8 @@
     <span>LE CIEL</span>
   </div>
 </footer>
-  </div>
 
-
-  <script>
+<script>
 const SUPABASE_URL = "https://vnkbiuuxufuajkuqwrjv.supabase.co/rest/v1/";
 const SUPABASE_KEY = "sb_publishable_lIZQ8uZMdxzTw-mdBx1P1w_kdxMO5hs";
 
@@ -163,42 +147,39 @@ const signupEmail = document.getElementById("signup-email");
 const signupMessage = document.getElementById("message");
 
 signupForm.addEventListener("submit", async function(event) {
-    event.preventDefault();
+  event.preventDefault();
+  const email = signupEmail.value.trim();
+  signupMessage.textContent = "Signing you up...";
 
-    const email = signupEmail.value.trim();
-    signupMessage.textContent = "Signing you up...";
+  try {
+    const response = await fetch(SUPABASE_URL + "email%20signups", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "apikey": SUPABASE_KEY,
+        "Authorization": "Bearer " + SUPABASE_KEY
+      },
+      body: JSON.stringify({ email: email })
+    });
 
-    try {
-        const response = await fetch(SUPABASE_URL + "email%20signups", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "apikey": SUPABASE_KEY,
-                "Authorization": "Bearer " + SUPABASE_KEY
-            },
-            body: JSON.stringify({ email: email })
-        });
-
-       if (!response.ok) {
-    const errorData = await response.json();
-
-    if (errorData.code === "23505") {
+    if (!response.ok) {
+      const errorData = await response.json();
+      if (errorData.code === "23505") {
         signupMessage.textContent = "You're already on the list!";
         signupForm.reset();
         return;
+      }
+      throw new Error("Signup failed");
     }
 
-    throw new Error("Signup failed");
-}
-
-signupMessage.textContent = "Thanks — you're on the list.";
-signupForm.reset();
-
-} catch (error) {
+    signupMessage.textContent = "Thanks — you're on the list.";
+    signupForm.reset();
+  } catch (error) {
     signupMessage.textContent =
-        "Something went wrong. Please try again.";
-}
+      "Something went wrong. Please try again.";
+  }
 });
 </script>
+
 </body>
 </html>
