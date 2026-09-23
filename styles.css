@@ -726,174 +726,21 @@ body {
   gap: 28px !important;
 }
 
-/* Center footer after removing community column */
-.footer-main {
-  grid-template-columns: repeat(3, auto) !important;
-  justify-content: center !important;
-  gap: clamp(80px, 12vw, 180px) !important;
-  text-align: left !important;
-}
-
-.footer-bottom {
-  justify-content: center !important;
-  gap: clamp(80px, 18vw, 240px) !important;
-}
-
-/* Footer spacing correction */
-.footer-main {
-  width: min(980px, 100%) !important;
-  grid-template-columns: 1.4fr 1fr 1fr !important;
-  justify-content: center !important;
-  gap: 72px !important;
-  min-height: auto !important;
-}
-
-.site-footer {
-  padding-top: 44px !important;
-  margin-top: 56px !important;
-}
-
-.footer-bottom {
-  width: min(980px, 100%) !important;
-  margin-top: 42px !important;
-  justify-content: space-between !important;
-  gap: 0 !important;
-}
-
-/* Footer layout like reference image, without community column */
+/* Footer final reference layout */
 .footer-main {
   width: min(1060px, 100%) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin: 0 auto !important;
   display: grid !important;
-  grid-template-columns: 1.35fr 1fr 1fr !important;
-  gap: clamp(90px, 12vw, 170px) !important;
-  justify-content: center !important;
+  grid-template-columns: 1.25fr 1fr 1fr 1.25fr !important;
+  gap: 64px !important;
   align-items: start !important;
 }
 
 .footer-bottom {
   width: min(1060px, 100%) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  gap: 0 !important;
-}
-
-/* Final footer column positions */
-.footer-main {
-  width: min(1060px, 100%) !important;
-  grid-template-columns: 1fr 1fr 1fr !important;
-  column-gap: 120px !important;
-}
-
-.footer-main .footer-column:last-child {
-  justify-self: end !important;
-  min-width: 220px !important;
-}
-
-.footer-bottom {
-  width: min(1060px, 100%) !important;
-  justify-content: space-between !important;
-}
-
-.footer-bottom span:last-child {
-  margin-left: auto !important;
-  text-align: right !important;
-}
-
-/* Footer final reset */
-.site-footer {
-  padding: 56px 0 0 !important;
-}
-
-.footer-main {
-  width: min(1160px, calc(100% - 96px)) !important;
-  margin: 0 auto !important;
-  display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr !important;
-  gap: 0 !important;
-  align-items: start !important;
-}
-
-.footer-brand {
-  justify-self: start !important;
-}
-
-.footer-main .footer-column:nth-of-type(1) {
-  justify-self: center !important;
-}
-
-.footer-main .footer-column:nth-of-type(2) {
-  justify-self: end !important;
-}
-
-.footer-bottom {
-  width: min(1160px, calc(100% - 96px)) !important;
   margin: 52px auto 0 !important;
   padding: 18px 0 !important;
   display: flex !important;
   justify-content: space-between !important;
   border-top: 1px solid rgba(17, 17, 17, 0.18) !important;
-}
-
-/* Footer clean final layout */
-.footer-main {
-  width: min(1060px, calc(100% - 96px)) !important;
-  margin: 0 auto !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: flex-start !important;
-  gap: 120px !important;
-}
-
-.footer-brand {
-  flex: 1 !important;
-  text-align: left !important;
-}
-
-.footer-main .footer-column {
-  flex: 1 !important;
-  text-align: left !important;
-}
-
-.footer-main .footer-column:last-child {
-  flex: 1 !important;
-  text-align: left !important;
-}
-
-.footer-bottom {
-  width: min(1060px, calc(100% - 96px)) !important;
-  margin: 52px auto 0 !important;
-  padding: 18px 0 !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  border-top: 1px solid rgba(17, 17, 17, 0.18) !important;
-}
-
-.footer-bottom span:first-child {
-  margin: 0 !important;
-}
-
-.footer-bottom span:last-child {
-  margin: 0 !important;
-}
-
-/* Spread footer bottom row back out */
-.footer-bottom {
-  width: min(1180px, calc(100% - 48px)) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: flex !important;
-  justify-content: space-between !important;
-}
-
-.footer-bottom span:first-child {
-  margin-right: auto !important;
-}
-
-.footer-bottom span:last-child {
-  margin-left: auto !important;
-  text-align: right !important;
 }
