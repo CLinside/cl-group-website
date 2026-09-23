@@ -885,3 +885,32 @@ body {
 .launch-status p:not(.label) {
   color: #2b1d17 !important;
 }
+
+/* Premium product details */
+.product-card h2 {
+  margin-top: 18px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em !important;
+}
+
+.product-price {
+  margin-top: 10px !important;
+  font-size: 12px !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #111111 !important;
+}
+
+.product-stock,
+.product-sizes {
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  color: #6b5648 !important;
+}
+
+.product-coming-soon {
+  margin-top: 18px !important;
+  min-width: 130px !important;
+  justify-content: center !important;
+}
