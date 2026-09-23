@@ -849,3 +849,26 @@ body {
   font-size: 13px;
   color: #555555;
 }
+
+.launch-status {
+  width: min(1060px, calc(100% - 48px));
+  margin: 90px auto 0;
+  padding: 44px 0;
+  border-top: 1px solid rgba(17, 17, 17, 0.14);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.14);
+}
+
+.launch-status h2 {
+  margin: 10px 0 12px;
+  font-size: clamp(34px, 5vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.launch-status p:not(.label) {
+  margin: 0;
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555555;
+}
