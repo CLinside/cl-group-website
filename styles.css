@@ -957,3 +957,5 @@ body {
   transform: none !important;
   z-index: 1 !important;
 }
+
+.video-actions { display: flex; flex-direction: column; gap: 10px; } .video-shop-now, .video-stay-updated { padding: 10px 22px; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255, 255, 255, 0.85); background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 2px; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transition: all 0.25s ease; text-decoration: none; display: inline-block; } .video-shop-now:hover, .video-stay-updated:hover { background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.55); box-shadow: 0 0 14px rgba(255, 255, 255, 0.12); }
