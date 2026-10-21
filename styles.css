@@ -1012,3 +1012,8 @@ body {
   color: #111 !important;
   border-color: #111 !important;
 }
+
+/* Rounded Join Waitlist buttons */
+.product-card .product-coming-soon {
+  border-radius: 999px !important;
+}
