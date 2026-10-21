@@ -575,7 +575,7 @@ body {
 
 .product-image-wrap {
   position: relative !important;
-  background: #f6f6f6 !important;
+  background: transparent !important;
   aspect-ratio: 1 / 1.32 !important;
   overflow: hidden !important;
 }
