@@ -994,3 +994,21 @@ body {
   display: none !important;
   content: none !important;
 }
+
+/* Smooth Join Waitlist button animation */
+.product-card .product-coming-soon {
+  background-color: #111 !important;
+  color: #fff !important;
+  border: 1px solid #111 !important;
+
+  transition: background-color 0.35s ease,
+              color 0.35s ease,
+              border-color 0.35s ease !important;
+}
+
+/* When cursor hovers over button */
+.product-card .product-coming-soon:hover {
+  background-color: #fff !important;
+  color: #111 !important;
+  border-color: #111 !important;
+}
