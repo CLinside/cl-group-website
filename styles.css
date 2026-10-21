@@ -985,3 +985,12 @@ body {
   background-color: #333 !important;
   color: #fff !important;
 }
+
+/* Hide grey bars around product images */
+.product-card::before,
+.product-card::after,
+.product-image-wrap::before,
+.product-image-wrap::after {
+  display: none !important;
+  content: none !important;
+}
