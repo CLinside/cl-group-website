@@ -571,5 +571,17 @@
   line-height: 1 !important;
 }
 
+/* Thin, elegant navigation typography */
+.lc-header .lc-nav a[href="#about"],
+.lc-header .lc-nav a[href^="mailto:"],
+.lc-header .lc-nav a[href="#updates"] {
+  font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.015em !important;
+  text-transform: none !important;
+  -webkit-text-stroke: 0 !important;
+}
+
 
 
