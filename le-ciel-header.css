@@ -624,5 +624,11 @@
   font-weight: 300;
 }
 
+/* Remove the extra menu icon above 7V */
+.lc-header .lc-wordmark::before {
+  content: none !important;
+  display: none !important;
+}
+
 
 
