@@ -1037,3 +1037,12 @@ body {
   letter-spacing: 0.02em !important;
   text-transform: none !important;
 }
+
+/* Thin luxury navigation font */
+.lc-header .lc-nav a {
+  font-family: "Avenir Next", "Century Gothic", "Helvetica Neue", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.01em !important;
+  text-transform: none !important;
+}
