@@ -1046,3 +1046,15 @@ body {
   letter-spacing: 0.01em !important;
   text-transform: none !important;
 }
+
+/* Clean hero — keep only SHOP NOW */
+
+/* Hide hero text */
+.lc-video-hero .lc-video-hero-content {
+  display: none !important;
+}
+
+/* Hide Stay Updated button */
+.lc-video-hero .video-stay-updated {
+  display: none !important;
+}
