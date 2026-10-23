@@ -602,5 +602,27 @@
   font-weight: 300;
 }
 
+/* Minimal luxury menu styling */
+.lc-header .lc-wordmark {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.lc-header .lc-menu-label {
+  font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.015em !important;
+  text-transform: none !important;
+}
+
+.lc-header .lc-wordmark::before {
+  content: "☰";
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 
 
