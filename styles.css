@@ -1028,3 +1028,12 @@ body {
 .collection .product-grid {
   margin-top: 12px !important;
 }
+
+/* Elegant navigation font */
+.nav-links a {
+  font-family: "Century Gothic", "Avenir Next", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+}
