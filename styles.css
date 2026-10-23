@@ -1058,3 +1058,16 @@ body {
 .lc-video-hero .video-stay-updated {
   display: none !important;
 }
+
+/* Reduce space below product images */
+.product-image-wrap {
+  aspect-ratio: auto !important;
+  height: auto !important;
+  margin-bottom: 18px !important;
+}
+
+.product-image-wrap img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
