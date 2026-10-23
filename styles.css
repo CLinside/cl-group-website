@@ -1017,3 +1017,14 @@ body {
 .product-card .product-coming-soon {
   border-radius: 999px !important;
 }
+
+/* Bring collection closer to hero */
+.collection {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Reduce space above products */
+.collection .product-grid {
+  margin-top: 12px !important;
+}
