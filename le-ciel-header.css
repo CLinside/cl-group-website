@@ -583,5 +583,24 @@
   -webkit-text-stroke: 0 !important;
 }
 
+/* Minimal shopping bag */
+.lc-header .shopping-bag {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.lc-header .shopping-bag svg {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+.lc-header .shopping-bag span {
+  font-size: 12px;
+  font-weight: 300;
+}
+
 
 
